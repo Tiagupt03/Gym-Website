@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <link rel="Stylesheet" href="css/form.css">
+</head>
+
+
+<form action="results.html" method="GET" enctype="multipart/form-data">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
+  </div>
+  <div>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+  </div>
+  <div>
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" min="1" max="200" step="1">
+  </div>
+  <div>
+    <label for="date">Birthdate</label>
+    <input type="date" name="date" id="date" max="2004-12-31">
+  </div>
+  </div>
+  <div>
+    Gender
+    <div>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male">
+    </div>
+    <div>
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female">
+    </div>
+  </div>
+  <div>
+    <label for="Homestate">Home State</label>
+    <select name="Homestate" id="Homestate" multiple>
+      <option value="1">Delhi</option>
+      <option value="2">Mumbai</option>
+      <option value="3">Other</option>
+    </select>
+  </div>
+  <div>
+    <label for="phone">Phone</label>
+    <input type="tel" name="phone" id="phone">
+  </div>
+  <div>
+    <label>
+      Password
+      <input type="password" name="password" required>
+    </label>
+  </div>
+  <button type="reset">Reset</button>
+  <button type="submit">Submit</button>
+</form>
+ </html>
